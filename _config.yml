@@ -15,7 +15,11 @@ header_pages:
   - index.md
   - about.md
 
-  
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed  
+  # - 其他插件...
+
 # plugins:
 #   - jekyll-seo-tag
 
