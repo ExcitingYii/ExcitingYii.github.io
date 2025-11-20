@@ -6,8 +6,18 @@
 
 #footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
 
-plugins:
-  - jekyll-seo-tag
+title: "陈亦的学术主页"
+email: "chen_yi@mail.ustc.edu.cn"
+description: "编辑你的个性签名"
+baseurl: ""
+url: "https://ExcitingYii.github.io"
+header_pages:
+  - index.md
+  - about.md
+
+  
+# plugins:
+#   - jekyll-seo-tag
 
 # Theme options
 # style: dark # dark (default) or light or hacker
