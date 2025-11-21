@@ -12,51 +12,16 @@
         {%- endif -%}
       {%- endfor -%}
 
-      <li>
-        <a href="{{ site.baseurl }}/">En</a> / <a href="{{ site.baseurl }}/cn/">中</a>
+      <li class="menu-locale">
+        <a href="{{ site.baseurl }}/">En</a>
+        <span class="menu-divider">/</span>
+        <a href="{{ site.baseurl }}/cn/">中</a>
+      </li>
+      <li class="menu-theme">
+        <button class="theme-option" type="button" data-theme-target="light" aria-pressed="false" title="Switch to light mode">亮</button>
+        <span class="menu-divider">/</span>
+        <button class="theme-option" type="button" data-theme-target="dark" aria-pressed="false" title="Switch to dark mode">暗</button>
       </li>
       </ul>
   </div>
-  <button id="theme-toggle" style="background:none; border:none; cursor:pointer; color:inherit; font-family:inherit;">
-    [Switch Theme]
-  </button>
 </header>
-
-<script>
-  const toggleBtn = document.getElementById('theme-toggle');
-  const body = document.body;
-
-  // 检查本地存储中是否有用户偏好
-  if (localStorage.getItem('theme') === 'light') {
-    body.classList.add('light-theme');
-  }
-
-  toggleBtn.addEventListener('click', () => {
-    body.classList.toggle('light-theme');
-    
-    // 保存用户偏好
-    if (body.classList.contains('light-theme')) {
-      localStorage.setItem('theme', 'light');
-    } else {
-      localStorage.removeItem('theme');
-    }
-  });
-</script>
-
-<style>
-  /* 假设默认是 Dark Mode (黑色背景，白色字) */
-  /* 定义 Light Mode 的样式覆盖 */
-  body.light-theme {
-    background-color: #fdf6e3 !important; /* Solarized Light 背景 */
-    color: #586e75 !important;           /* Solarized Light 文字 */
-  }
-  
-  /* 你可能需要针对链接和代码块单独设置颜色反转 */
-  body.light-theme a {
-    color: #268bd2 !important;
-  }
-  body.light-theme pre {
-    background-color: #eee8d5 !important;
-    color: #657b83 !important;
-  }
-</style>

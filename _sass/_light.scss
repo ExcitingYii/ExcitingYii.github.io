@@ -2,8 +2,8 @@
  * Light theme variables
  */
 
-@mixin theme() {
-  :root {
+@mixin theme($selector: ':root') {
+  #{$selector} {
     --base-color: #000;
     --border: dashed 1px rgba(0, 0, 0, 1);
     --selection-background: rgba(0, 0, 0, 0.99);

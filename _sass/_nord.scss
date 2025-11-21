@@ -2,8 +2,8 @@
  * Nord theme variables
  */
 
-@mixin theme() {
-  :root {
+@mixin theme($selector: ':root') {
+  #{$selector} {
     --base-color: #D8DEE9;
     --border: dashed 1px #3B4252;
     --selection-background: #E5E9F0;

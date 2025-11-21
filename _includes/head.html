@@ -33,4 +33,6 @@
   {%- if jekyll.environment == 'production' and site.tracking -%}
   {%- include tracker.html -%}
   {%- endif -%}
+
+  <script src="{{ '/assets/theme-toggle.js' | relative_url }}" defer></script>
 </head>

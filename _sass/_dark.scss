@@ -2,8 +2,8 @@
  * Dark theme variables
  */
 
-@mixin theme() {
-  :root {
+@mixin theme($selector: ':root') {
+  #{$selector} {
     --base-color: #DBDBDB;
     --border: dashed 1px rgba(219, 219, 219, 0.9);
     --selection-background: rgba(219, 219, 219, 0.99);
