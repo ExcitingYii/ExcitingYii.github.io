@@ -3,11 +3,12 @@
 /**
  * Style variables
  */
-$base-font-family:     'Source Code Pro', monospace !default;
-$base-font-size:       12.5px !default;
+// $base-font-family:     'Source Code Pro', monospace !default;
+$base-font-family: '宋体', 'Cambria', serif;
+$base-font-size:       16px !default;
 $mobile-font-size:     12px !default;
 $base-line-height:     1.5 !default;
-$container-width:      90% !default;
+$container-width:      80% !default;
 $container-max-width:  600px !default;
 
 /**
@@ -23,7 +24,8 @@ a:hover { color: var(--background-color); background-color: var(--base-color); }
 /**
  * Layout
  */
-.container { width: $container-width;  max-width: $container-max-width;  margin-right: auto;  margin-left: auto; }
+// .container { width: $container-width;  max-width: $container-max-width;  margin-right: auto;  margin-left: auto; }
+.container { width: $container-width;  margin-right: auto;  margin-left: auto; }
 p { word-wrap: break-word;  word-break: break-word;  white-space: pre-wrap; margin-bottom: 15px; }
 footer { color: var(--text-color);  border-top: var(--border);  margin: 20px auto 15px;  padding-top: 10px;  text-align: right; }
 header { margin-top: 25px;  margin-bottom: 10px; }
@@ -42,6 +44,13 @@ footer { margin-bottom: 20px; }
 :not(.menu) > ul { list-style: none;  padding-left: 0; }
 :not(.menu) > ul { list-style-type: none; }
 :not(.menu) > ul > li:before { content: "-";  margin-right: 9px; }
+
+/**
+ * Paper specific helpers
+ */
+.paper-venue { font-family: 'Times New Roman', 'SimSun', serif; color: var(--code-color-15); margin-right: 6px; }
+.paper-authors { display: block; font-size: $base-font-size - 2px; color: var(--text-color); margin-top: 4px; }
+.paper-authors strong { color: var(--text-color); }
 
 /**
  * Header/Navigation
