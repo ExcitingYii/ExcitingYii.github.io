@@ -1,5 +1,15 @@
 {%- assign default_paths = site.html_pages | map: 'path' -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
+{%- assign current_lang = page.lang | default: site.lang | default: 'en' -%}
+{%- assign locale_en_url = '/en/' | relative_url -%}
+{%- assign locale_cn_url = '/cn/' | relative_url -%}
+{%- if current_lang == 'zh' -%}
+  {%- assign theme_dark_label = '暗' -%}
+  {%- assign theme_light_label = '亮' -%}
+{%- else -%}
+  {%- assign theme_dark_label = 'dark' -%}
+  {%- assign theme_light_label = 'light' -%}
+{%- endif -%}
 <header>
   <div class="menu">
     <ul>
@@ -13,14 +23,14 @@
       {%- endfor -%}
 
       <li class="menu-locale">
-        <a href="{{ site.baseurl }}/">En</a>
+        <a href="{{ locale_en_url }}"{% if current_lang == "en" %} aria-current="page"{% endif %}>EN</a>
         <span class="menu-divider">/</span>
-        <a href="{{ site.baseurl }}/cn/">中</a>
+        <a href="{{ locale_cn_url }}"{% if current_lang == "zh" %} aria-current="page"{% endif %}>中</a>
       </li>
       <li class="menu-theme">
-        <button class="theme-option" type="button" data-theme-target="light" aria-pressed="false" title="Switch to light mode">亮</button>
+        <button class="theme-option" type="button" data-theme-target="dark" aria-pressed="false" title="Switch to dark mode">{{ theme_dark_label }}</button>
         <span class="menu-divider">/</span>
-        <button class="theme-option" type="button" data-theme-target="dark" aria-pressed="false" title="Switch to dark mode">暗</button>
+        <button class="theme-option" type="button" data-theme-target="light" aria-pressed="false" title="Switch to light mode">{{ theme_light_label }}</button>
       </li>
       </ul>
   </div>

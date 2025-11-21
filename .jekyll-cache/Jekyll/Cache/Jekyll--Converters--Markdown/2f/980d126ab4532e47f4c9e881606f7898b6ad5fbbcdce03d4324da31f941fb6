@@ -1,17 +1,13 @@
-I"�<table>
-  <tbody>
-    <tr>
-      <td><a href="/index.html">查看英文版</a></td>
-      <td><a href="/cn/">查看中文版</a></td>
-    </tr>
-  </tbody>
-</table>
+I"<!-- [查看英文版](/en/) | [查看中文版](/cn/) -->
 
-<h2 id="你好世界">你好，世界！</h2>
+<p>陈亦</p>
 
-<p>我是陈亦，这是我的中文学术主页。</p>
+<ul>
+  <li>中国科学技术大学，计算机科学技术，博士 (2023 - 至今)</li>
+  <li>重庆大学，集成电路设计与集成系统(弘深) (2019 - 2023)</li>
+</ul>
 
-<h2 id="publications">Publications</h2>
+<h2 id="论文发表">论文发表</h2>
 <ul>
   <li>
     <p><strong>2025</strong> :
@@ -27,10 +23,10 @@
   </li>
 </ul>
 
-<h2 id="education">Education</h2>
+<h2 id="荣誉奖项">荣誉奖项</h2>
 
 <ul>
-  <li>Ph.D. in Computer Science, University of Science and Technology of China (2023 - Present)</li>
-  <li>B.S. in Intergrated Circuit Design and Intergrated System, Chongqing University (2019 - 2023)</li>
+  <li>2025年 - 中国科学技术大学 - 国家奖学金</li>
 </ul>
+
 :ET
