@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 首页
+title: 陈亦
 lang: zh
 ---
 {% include cn-home.md %}
